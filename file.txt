@@ -1,3 +1,8 @@
+# ==================
+# Section 01 ( 42M )
+# ==================
+
+
 # This file is to remember what tools i have installed on the host machine
 # arp-scan
 # netdiscover
@@ -5,3 +10,17 @@
 
 # Hydra tools using in parrot VM
 hydra -l msdadmin -P pass.txt ftp://192.168.174.146
+
+# Find DNS information
+dnsenum ktm-logistics.com
+dnsrecon -d ktm-logistics.com
+
+# To find exploit
+searchsploit apache 2.3		# finds exploit for apache 2.4
+
+# Web server scanner
+nikto -h ktm-logistics.com
+
+# Generate test wordlist
+cewl ktm-logistics.com -w passwd.txt
+
